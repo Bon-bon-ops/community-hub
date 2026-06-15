@@ -1,4 +1,5 @@
 const express = require("express");
+ ruth/public
 const expressLayouts = require("express-ejs-layouts");
 const methodOverride = require("method-override");
 const path = require("path");
@@ -71,3 +72,16 @@ initializeDatabase()
     console.error("Failed to initialize database:", err);
     process.exit(1);
   });
+
+
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+app.get("/", (req, res) => {
+  res.send("Community Hub");
+});
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
+ reda-backend
