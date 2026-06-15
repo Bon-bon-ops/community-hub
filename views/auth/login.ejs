@@ -1,0 +1,19 @@
+<div class="auth-card">
+  <div class="page-header">
+    <h1>Login</h1>
+  </div>
+  <p class="auth-note">Sign in to access all Community Hub content.</p>
+
+  <form action="/auth/login" method="POST" class="form">
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" required />
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required />
+
+    <div class="card-actions">
+      <button type="submit" class="btn btn-primary">Login</button>
+      <a href="/auth/register" class="btn btn-outline">Register</a>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,19 @@
+<div class="page-header">
+  <h1><%= post.title %></h1>
+</div>
+
+<p class="meta">By <%= post.author %> · <%= new Date(post.created_at).toLocaleDateString() %></p>
+
+<div class="content-box">
+  <p><%= post.content %></p>
+</div>
+
+<div class="card-actions">
+  <a href="/posts" class="btn btn-small btn-outline">&larr; Back to Posts</a>
+  <% if (currentUser) { %>
+    <a href="/posts/<%= post.id %>/edit" class="btn btn-small">Edit</a>
+    <form action="/posts/<%= post.id %>?_method=DELETE" method="POST" class="inline-form">
+      <button type="submit" class="btn btn-small btn-danger" onclick="return confirm('Delete this post?')">Delete</button>
+    </form>
+  <% } %>
+</div>
