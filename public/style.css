@@ -26,7 +26,7 @@ body {
   padding: 2rem 1.5rem 4rem;
 }
 
-/* Navbar */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -59,7 +59,7 @@ body {
   color: var(--gold);
 }
 
-/* Hero */
+
 .hero {
   text-align: center;
   padding: 3rem 1rem;
@@ -81,7 +81,7 @@ body {
   gap: 1rem;
 }
 
-/* Grid */
+
 .grid-two {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -106,7 +106,7 @@ body {
   margin-top: 0;
 }
 
-/* Page header */
+
 .page-header {
   display: flex;
   justify-content: space-between;
@@ -120,7 +120,33 @@ body {
   margin: 0;
 }
 
-/* Buttons */
+.nav-user {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-left: 1.5rem;
+}
+
+.nav-inline {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-inline button.btn-link {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-left: 1.5rem;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.2s;
+}
+
+.nav-inline button.btn-link:hover {
+  color: var(--gold);
+}
+
 .btn {
   display: inline-block;
   padding: 0.6rem 1.2rem;
@@ -179,7 +205,7 @@ body {
   color: #fff;
 }
 
-/* Post / Event cards */
+
 .post-list {
   display: flex;
   flex-direction: column;
@@ -229,7 +255,7 @@ body {
   display: inline;
 }
 
-/* Content box */
+
 .content-box {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -239,7 +265,7 @@ body {
   white-space: pre-wrap;
 }
 
-/* Forms */
+
 .auth-card {
   max-width: 460px;
   margin: 2rem auto;
@@ -314,7 +340,7 @@ body {
   margin-bottom: 1rem;
 }
 
-/* Footer */
+
 .footer {
   text-align: center;
   padding: 1.5rem;
