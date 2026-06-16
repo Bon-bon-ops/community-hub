@@ -1,0 +1,17 @@
+<header class="navbar">
+  <a href="/" class="brand">Community<span>Hub</span></a>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/posts">Blog</a>
+    <a href="/events">Events</a>
+    <% if (currentUser) { %>
+      <span class="nav-user">Signed in as <%= currentUser.username %></span>
+      <form action="/auth/logout" method="POST" class="nav-inline" id="logout-form">
+        <a href="#" class="nav-logout-link" onclick="document.getElementById('logout-form').submit(); return false;">Logout</a>
+      </form>
+    <% } else { %>
+      <a href="/auth/login">Login</a>
+      <a href="/auth/register">Register</a>
+    <% } %>
+  </nav>
+</header>
